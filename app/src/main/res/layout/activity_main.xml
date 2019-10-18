@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:gravity="center"
+    android:background="@drawable/t_img"
+    tools:context=".main.Login">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_height="match_parent">
+
+    <ProgressBar
+        android:id="@+id/login_progress"
+        style="?android:attr/progressBarStyleLarge"
+        android:layout_width="40sp"
+        android:indeterminate="true"
+        android:visibility="invisible"
+        android:layout_marginTop="20sp"
+        android:indeterminateTintMode="src_atop"
+        android:indeterminateTint="@color/app_white"
+        android:layout_gravity="center"
+        android:layout_height="40sp"
+        android:layout_marginBottom="8dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:focusable="true"
+        android:gravity="center"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20sp"
+        android:orientation="vertical">
+
+        <EditText
+            android:textSize="16sp"
+            android:imeActionLabel="@string/action_sign_in_short"
+            android:imeOptions="actionUnspecified"
+            android:id="@+id/user_id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/prompt_email"
+            android:textColorHint="@color/app_white"
+            android:inputType="text"
+            android:textStyle="bold"
+            android:drawableRight="@drawable/ic_phone"
+            android:focusable="true"
+            android:backgroundTint="@android:color/white"
+            android:paddingLeft="8sp"
+            android:layout_margin="10dp"
+            android:textColor="@color/app_white"
+            android:focusableInTouchMode="true"
+            android:maxLines="1"
+            android:singleLine="true"/>
+
+        <EditText
+            android:textSize="16sp"
+            android:id="@+id/password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/prompt_password"
+            android:imeActionId="6"
+            android:textColorHint="@color/app_white"
+            android:textColor="@color/app_white"
+            android:focusable="true"
+            android:layout_margin="10dp"
+            android:paddingLeft="8sp"
+            android:textStyle="bold"
+            android:backgroundTint="@android:color/white"
+            android:drawableRight="@drawable/ic_eye"
+            android:focusableInTouchMode="true"
+            android:imeActionLabel="@string/action_sign_in_short"
+            android:imeOptions="actionUnspecified"
+            android:inputType="textPassword"
+            android:maxLines="1"
+            android:singleLine="true"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_gravity="center"
+            android:layout_marginLeft="10sp"
+            android:layout_height="wrap_content">
+
+            <CheckBox
+                android:id="@+id/remember"
+                android:layout_weight="1"
+                android:checked="false"
+                android:layout_width="wrap_content"
+                android:buttonTint="@color/app_white"
+                android:text="Remember"
+                android:textStyle="bold"
+                android:textColor="@color/app_white"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:text="Forgot Password"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:textColor="@color/app_white"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/sign_in_button"
+            style="?android:textAppearanceSmall"
+            android:layout_width="match_parent"
+            android:background="@drawable/ic_launcher_background"
+            android:layout_height="40dp"
+            android:translationZ="1sp"
+            android:layout_marginTop="16dp"
+            android:text="@string/action_sign_in"
+            android:textColor="#fff"
+            android:textSize="16dp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/sign_in_Register"
+            android:layout_weight="1"
+            android:layout_marginTop="16dp"
+            android:layout_width="wrap_content"
+            android:text="New User ! Register"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:textSize="16dp"
+            android:textColor="@color/app_white"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+    </LinearLayout>
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

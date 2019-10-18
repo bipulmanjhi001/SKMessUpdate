@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="colorPrimary">#ebb805</color>
+    <color name="colorPrimaryDark">#fdd43e</color>
+    <color name="colorAccent">#feed9b</color>
+    <color name="app_white">#fff</color>
+    <color name="boxcolor">#DFF7F2</color>
+    <color name="pink">#DB0950</color>
+    <color name="trans">#1D000000</color>
+    <color name="transparent">#00000000</color>
+</resources>
